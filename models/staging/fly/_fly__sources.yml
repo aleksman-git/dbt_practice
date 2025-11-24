@@ -1,0 +1,19 @@
+sources:
+  - name: demo_src
+    description: Источник
+    tables:
+      - name: aircrafts
+        description: Модели самолета
+        columns: 
+        - name: aircraft_code
+          description: Код самолета
+          tests:
+            - unique_values
+        - name: model
+          description: Модель
+        - name: range
+          description: Ранг
+          tests:
+            - unique_values
+      - name: airports
+      - name: seats
